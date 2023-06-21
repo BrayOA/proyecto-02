@@ -276,14 +276,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
   line-height: 1;
 }
 .banner button:hover svg {
   margin-left: 25px;
 }
 .banner img {
-  animation: updown 7s linear infinite;
+  animation: updown 10s linear infinite;
 }
 @keyframes updown {
     0% {
@@ -297,7 +297,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     }
 }
 .txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
+  border-right: 0.07em solid #ffffff;
 }
 
 /************ Skills Css ************/
