@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: #000000 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -58,6 +58,8 @@ img {
   height: auto;
 }
 
+
+
 button {
   border: 0;
   background-color: transparent;
@@ -82,8 +84,13 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+
+img.logo-p {
+  width: 144px;
+}
+
 nav.navbar {
-  padding: 18px 0;
+  padding: 13px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -106,7 +113,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   opacity: 0.75;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+nav.navbr .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
 span.navbar-text {
@@ -134,7 +141,7 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #9813cc;
+    background-color: #07e8ed;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -151,12 +158,12 @@ span.navbar-text {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 .navbar-text button {
-  font-weight: 700;
+  font-weight: 600px;
   color: #fff;
   border: 1px solid #ffffff;
-  padding: 18px 34px;
+  padding: 13px 34px;
   font-size: 18px;
-  margin-left: 18px;
+  margin-left: 23px;
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
@@ -169,7 +176,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #9813cc;
+  background-color: #07e8ed;
   left: 0;
   top: 0;
   z-index: -1;
@@ -232,18 +239,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 .banner {
+  height: 645px;
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/galaxia.jpg');
+  padding: 170px 0 50px 0;
+  background-image: url('./assets/img/principal.svg');
   background-position: top center;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: radial-gradient(circle, rgba(63,94,251,0.711922268907563) 0%, rgba(70,248,252,0.6166841736694677) 100%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -302,8 +310,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 0 0 35px 0;
   position: relative;
+  background-color: #000;
 }
 .skill-bx {
   background: #151515;
@@ -344,7 +353,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+ background-color: #000;
 }
 .project h2 {
 	font-size: 45px;
@@ -468,7 +477,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: #000;
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -525,7 +534,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: #07e8ed;
   width: 0;
   height: 100%;
   position: absolute;
@@ -547,9 +556,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 .newsletter-bx {
-  background: #FFFFFF;
+  background: #1a1a1a;
   border-radius: 55px;
-  color: #121212;
+  color: #ffffff;
   padding: 85px 125px;
   margin-bottom: 80px;
   margin-top: -122px;
@@ -599,9 +608,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 15px;
 }
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: #B8B8B8;
   padding: 20px 65px;
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   letter-spacing: 0.5px;
   border-radius: 18px;
