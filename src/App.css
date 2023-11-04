@@ -15,6 +15,17 @@
 	font-weight: 400;
 }
 
+::-webkit-scrollbar {
+  background-color: #070707;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0f0f0f;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
 /************ Default Css ************/
 * {
   margin: 0;
@@ -86,11 +97,11 @@ p.danger {
 /************ Navbar Css ************/
 
 img.logo-p {
-  width: 144px;
+  width: 110px;
 }
 
 nav.navbar {
-  padding: 13px 0;
+  padding: 31px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -104,13 +115,28 @@ nav.navbar.scrolled {
 nav.navbar a.navbar-brand {
     width: 9%;
 }
-nav.navbar .navbar-nav .nav-link.navbar-link {
+nav.navbar .navbar-nav .nav-link.navbar-link{
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link {
+  font-weight: 400;
+  color: #ffffff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+  transition: color 0.3s;
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+  color: #0F4C75 !important;
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link.active:hover {
+  color: #0F4C75 !important;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbr .navbar-nav a.nav-link.navbar-link.active {
@@ -141,7 +167,7 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #07e8ed;
+    background-color: #0F4C75;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -163,7 +189,7 @@ span.navbar-text {
   border: 1px solid #ffffff;
   padding: 13px 34px;
   font-size: 18px;
-  margin-left: 23px;
+  margin-left: 35px;
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
@@ -176,14 +202,14 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #07e8ed;
+  background-color: #0F4C75;
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: #ffffff;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -241,8 +267,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   height: 645px;
   margin-top: 0;
-  padding: 170px 0 50px 0;
-  background-image: url('./assets/img/principal.svg');
+  padding: 220px 0 50px 0;
+  /* background-image: url('./assets/img/'); */
   background-position: top center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -254,11 +280,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: radial-gradient(circle, rgba(63,94,251,0.711922268907563) 0%, rgba(70,248,252,0.6166841736694677) 100%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
   display: inline-block;
 }
 .banner h1 {
-  font-size: 50px;
+  font-size: 42px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -290,6 +316,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
+
+.bray-img {
+  width: 400px;
+  height: auto;
+}
+.bray-img-c {
+  padding-left: 126px;
+}
 .banner img {
   animation: updown 10s linear infinite;
 }
@@ -310,7 +344,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 35px 0;
+  padding: 100px 0 35px 0;
   position: relative;
   background-color: #000;
 }
@@ -398,7 +432,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: radial-gradient(circle, rgba(63,94,251,0.711922268907563) 0%, rgba(70,248,252,0.6166841736694677) 100%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -430,7 +464,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: #0F4C75;
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -491,7 +525,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form input, .contact form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #07e8ed;
   border-radius: 20px;
   color: #fff;
   margin: 0 0 8px 0;
@@ -517,6 +551,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button {
   font-weight: 700;
   color: #000;
+  border: 1px solid #07e8ed;
   background-color: #fff;
   padding: 14px 48px;
   font-size: 18px;
