@@ -4,6 +4,11 @@ import headerImg from "../assets/img/bray.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import navIcon1 from '../assets/img/nav-icon1.svg';
+import navIcon2 from '../assets/img/github.svg';
+import navIcon3 from '../assets/img/nav-icon3.svg';
+import navIcon4 from '../assets/img/instagram.svg';
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -63,9 +68,9 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span className="tagline">Bienvenidos a mi Portafolio</span>
                   <h1>
-                    {`Hi! I'm Brayan`}{" "}
+                    {`Hola soy Bayan`}{" "}
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
@@ -75,20 +80,24 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    As a front-end developer, I have the ability to design and
-                    build the user interface of an application, allowing me to
-                    provide clients with engaging and functional user
-                    experiences from the first contact to the final interaction.
+                  Como diseñador UI y desarrollador front-end, me especializo en crear experiencias visuales atractivas y funcionales. Combino creatividad y habilidades técnicas para diseñar e implementar interfaces de usuario eficientes, con el objetivo de mejorar la experiencia del usuario."
                   </p>
                   <a
-                    href="/ruta/a/tu/curriculum.pdf"
-                    download="mi_curriculum.pdf"
+                    className="cv"
+                    href="https://drive.google.com/uc?export=download&id=1zXjGcjNaFsJ2-Xo6EQJTRKoS9Lrzef5h"
+                    download="Currículumbrayan.pdf"
                     style={{ textDecoration: "none" }}
                   >
-                    <button>
-                      Download CV <ArrowRightCircle size={25} />
+                    <button className="downloadcv">
+                      Descargar CV <ArrowRightCircle size={25} />
                     </button>
                   </a>
+                  <div className="social-icon">
+                <a className="1" href="https://www.linkedin.com/in/brayan-cristhian-112b69186/"><img src={navIcon1} alt="" /></a>
+                <a className="1" href="https://github.com/BrayOA"><img src={navIcon2} alt="" /></a>
+                <a className="1" href="https://twitter.com/BrayOrconA"><img src={navIcon3} alt="" /></a>
+                <a className="1" href="https://www.instagram.com/brayoa01/"><img src={navIcon4} alt="" /></a>
+              </div>
                 </div>
               )}
             </TrackVisibility>
